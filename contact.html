@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<!--Abaixo temos algumas propriedades falicitam a navegação, como compatibilidade-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luciano Dos Santos</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+<!--Menu de navegação-->
+    <nav>
+        <ul>
+            <li><a href="index.html">Sobre Mim</a></li>
+            <li><a href="formacao.html">Formacao</a></li>
+            <li><a href="Portfolio.html">Portfólio</a></li>
+            <li><a href="contact.html">Contato</a></li>
+        </ul>
+    </nav>
+    <header>
+<!--Cabeçalho com foto-->
+        <div class="center">
+            <img src="./foto/lataria.png"></img>
+        </div>
+        <h1>Luciano Dos Santos</h1>
+        <h2>RU:5221244</h2>
+<!--Botão para alternar tema-->
+        <button id="alternarTema">
+            Alternar para tema claro
+        </button>    
+    </header>
+    <main>
+        <div class="conteudo-principal">    
+    <section>
+        <h3>Envie uma Mensagem</h3>
+        <form id="formularioContato">
+            <label for="nome">Nome Completo:</label><br>
+            <input type="text" id="nome" name="nome" required><br><br>
+            <label for="email">E-mail:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+            <label for="mensagem">Mensagem:</label><br>
+            <textarea id="mensagem" name="mensagem" rows="4" required></textarea><br><br>
+            <button type="submit">Enviar Contato</button>
+        </form>
+        <p id="mensagemFeedback" style="color: lightgreen; margin-top: 15px;"></p>
+    </section>   
+    <section>
+            <h3>Contato direto</h3>
+            <h5>Clique no gmail ou no numero abaixo:</h5>
+            <h4>E-mail</h4>
+<!--Criação de link automatico para whatsapp e gmail-->
+            <p>
+                <a href="mailto: lucianodossantosesantos9@gmail.com">
+                    lucianodossantosesantos9@gmail.com
+                </a>
+            </p>
+            <h4>Whatsapp</h4>
+            <p>
+                <a href="https://wa.me/5571992962681" target="_blank">
+                    (71)992962681
+                </a>
+            </p>    
+          </section>
+        </div>
+    </main>
+    <script src="contact.js"></script>
+</body>
+
+</html>

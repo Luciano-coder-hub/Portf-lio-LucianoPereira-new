@@ -1,0 +1,88 @@
+body {
+    /*Abaixo definimos o tema escuro como padrão do site*/
+    color: #fffFFFFF;
+    background-color: #000000;
+    font-family: 'Consolas', 'Courier New', monospace;  
+}
+/*Abaixo usamos algumas propriedades para alinhar o texto e deixar mais visualmente elegante*/
+ul{
+    display: flex;
+    max-width: 900px;
+    justify-content: space-around;
+    list-style-type: none;
+    align-items:center;
+    padding: 20px;
+}
+
+a {
+    color: #e0e0e0;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+/*Abaixo aplicamos efeito na passagem do mouse sobre os links*/
+a:hover {
+    color: #fff;
+    text-shadow:0 0 5px #fff;
+}
+
+img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid rgba(208, 221, 224, 0.699);
+    object-fit: cover;
+    border: 3px solid rgba(10, 161, 196, 0.699);
+    box-shadow: 0 0 10px rgba(255, 165, 0, 0.4);
+    margin-bottom: 20px;
+}
+
+.center{
+    text-align: center;
+}
+
+h1{
+color: #ffffffcc; 
+    text-shadow: none; 
+    font-size: 2.5em;
+    margin-bottom: 5px;
+}
+
+h2{
+color: #ffffffcc; 
+    text-shadow: none;
+    font-size: 1.2em;
+    margin-top: 0;
+}
+
+h3{
+color: #00a1c9; 
+    text-shadow: none; 
+    font-size: 1.8em;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    text-align: left; 
+    border-bottom: 1px solid #fff; 
+    padding-bottom: 5px;
+}
+/*Abaixo temos as cores a serem ativadas do tema claro quando o botão é clicado*/
+.tema-claro{
+    background-color: #f0f0f0 !important;
+    color: #333333 !important;
+    background-image: none !important;
+}
+
+.tema-claro h1,
+.tema-claro h2{
+    color: #000000 !important;
+}
+
+.tema-claro a{
+    color: #007bff !important;
+}
+
+.tema-claro a:hover{
+    color: #0056b3 !important;
+    text-shadow: none !important;
+}
+
